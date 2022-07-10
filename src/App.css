@@ -1,38 +1,68 @@
-.App {
+.home-background {
+  background-image: url("https://forms.office.com/Images/Theme/meeting.png");
+  margin: 0px;
+  height: 100vh;
   text-align: center;
+  width: 100vw;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-top: 0px;
+  font-size: 70px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #c9b4de;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #957dad, 1px 2px 0px #957dad, 1px 3px 0px #957dad,
+    1px 4px 0px #957dad, 1px 5px 0px #957dad, 1px 6px 0px #957dad,
+    1px 10px 5px rgba(16, 16, 16, 0.5), 1px 15px 10px rgba(16, 16, 16, 0.4),
+    1px 20px 30px rgba(16, 16, 16, 0.3), 1px 25px 50px rgba(16, 16, 16, 0.2);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.heading-follow {
+  font-size: 50px;
+  font-weight: 500;
+  color: #c375d0;
+  width: 600px;
+  margin: auto;
+  animation: cursor 1s infinite step-end;
+  border-right: 4px solid #000;
+  margin-top: 200px;
+  /* I was not able to move this in middle  */
+}
+@keyframes cursor {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttons {
+  margin-top: 150px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-home {
+  /* padding: 30px; */
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 15px 28px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin: 30px;
 }
